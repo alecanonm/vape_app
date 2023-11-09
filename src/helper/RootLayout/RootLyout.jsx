@@ -12,13 +12,13 @@ const RootLayout = () => {
         <Outlet />
         <div
           role="button"
-          className="fixed  bg-[#619c89] right-3 bottom-10  rounded-full"
+          className="fixed  bg-[#619c89] right-5 bottom-6  rounded-full"
         >
           <img
             src={shoppingCart}
             alt="shopping-cart"
-            width={40}
-            height={40}
+            width={30}
+            height={30}
             className=" m-4"
           />
         </div>

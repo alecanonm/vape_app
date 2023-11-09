@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import SearchBar from "../SearchBar/SearchBar";
 
 const navMotion = {
   visible: {
@@ -35,8 +36,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className=" flex justify-between m-6">
+    <nav className=" flex justify-between m-6 items-center">
       <h1>TMV</h1>
+      <SearchBar />
       {matches && (
         <section
           onClick={() => setToggled((prevToggled) => !prevToggled)}

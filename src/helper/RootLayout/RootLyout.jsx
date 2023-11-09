@@ -7,7 +7,7 @@ const RootLayout = () => {
       <header>
         <Navbar />
       </header>
-      <main className=" flex-1 bg-black">
+      <main className=" flex-1 bg-slate-300">
         <Outlet />
       </main>
     </>

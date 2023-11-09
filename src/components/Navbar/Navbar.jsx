@@ -36,7 +36,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className=" flex justify-between m-6 items-center">
+    <nav className=" flex justify-between p-6 items-center">
       <h1>TMV</h1>
       <SearchBar />
       {matches && (

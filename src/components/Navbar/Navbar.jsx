@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import SearchBar from "../SearchBar/SearchBar";
-
+import { Link } from "react-router-dom";
 const navMotion = {
   visible: {
     opacity: 10,
@@ -39,6 +39,15 @@ const Navbar = () => {
     <nav className=" flex justify-between p-6 items-center">
       <h1>TMV</h1>
       <SearchBar />
+      {!matches && (
+        <ul className="flex gap-10">
+          <Link to={"/"}>Iniciar sesion</Link>
+          <Link to={"/"}>Registarse</Link>
+          <Link to={"/"}>Sabores</Link>
+          <Link to={"/"}>Marcas</Link>
+          <Link>Sobre Nosotros</Link>
+        </ul>
+      )}
       {matches && (
         <section
           onClick={() => setToggled((prevToggled) => !prevToggled)}

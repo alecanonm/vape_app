@@ -8,7 +8,7 @@ const RootLayout = () => {
       <header>
         <Navbar />
       </header>
-      <main className=" flex-1 bg-slate-300 -z-10">
+      <main className=" flex-1 bg-slate-300 -z-10 place-content-center grid">
         <Outlet />
         <div
           role="button"

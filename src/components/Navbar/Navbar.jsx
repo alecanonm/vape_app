@@ -79,39 +79,39 @@ const Navbar = () => {
                 setToggled((prev) => !prev);
               }}
               variants={itemMotion}
-              href="/#about"
+              href="/"
             >
-              About
+              Marcas
             </motion.a>
             <motion.a variants={itemMotion} href="/project">
-              Projects
+              Sabores
             </motion.a>
             <motion.a
               onClick={() => {
                 setToggled((prev) => !prev);
               }}
               variants={itemMotion}
-              href="/#skills"
+              href="/"
             >
-              Skills
+              Iniciar sesion
             </motion.a>
             <motion.a
               onClick={() => {
                 setToggled((prev) => !prev);
               }}
               variants={itemMotion}
-              href="/#contact"
+              href="/"
             >
-              Contact
+              Registarse
             </motion.a>
             <motion.a
               variants={itemMotion}
               onClick={() => {
                 setToggled((prev) => !prev);
               }}
-              href="/#qualifications"
+              href="/"
             >
-              Certifications
+              Sobre nosotros
             </motion.a>
           </motion.section>
         </motion.section>

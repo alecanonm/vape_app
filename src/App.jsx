@@ -1,7 +1,27 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
+import Home from "./pages/Home/Home";
+import RootLayout from "./helper/RootLayout/RootLyout";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  return <h1>Take my vape</h1>;
+  return (
+    <div className=" flex flex-col h-screen">
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
 export default App;

@@ -8,11 +8,11 @@ const RootLayout = () => {
       <header>
         <Navbar />
       </header>
-      <main className=" flex-1 bg-slate-300 -z-10 place-content-center grid">
+      <main className=" flex-1 bg-slate-300  place-content-center grid">
         <Outlet />
         <div
           role="button"
-          className="fixed  bg-[#619c89] right-5 bottom-6  rounded-full"
+          className="fixed  bg-[#619c89] right-5 bottom-6  rounded-full "
         >
           <img
             src={shoppingCart}

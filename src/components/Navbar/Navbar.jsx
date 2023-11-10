@@ -75,7 +75,7 @@ const Navbar = () => {
         <motion.section
           animate={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
-          className=" fixed flex bg-[#ffffff] bottom-0 left-0 w-full h-screen items-center justify-center"
+          className=" fixed flex bg-[#ffffff] z-10 bottom-0 left-0 w-full h-screen items-center justify-center"
         >
           <motion.section
             variants={navMotion}
@@ -93,7 +93,7 @@ const Navbar = () => {
               Marcas
             </motion.a>
             <motion.a variants={itemMotion} href="/project">
-              Sabores
+              Novedades
             </motion.a>
             <motion.a
               onClick={() => {

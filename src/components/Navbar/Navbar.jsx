@@ -43,7 +43,7 @@ const Navbar = () => {
         <ul className="flex gap-10">
           <Link to={"/"}>Iniciar sesion</Link>
           <Link to={"/"}>Registarse</Link>
-          <Link to={"/"}>Sabores</Link>
+          <Link to={"/"}>Novedades</Link>
           <Link to={"/"}>Marcas</Link>
           <Link>Sobre Nosotros</Link>
         </ul>

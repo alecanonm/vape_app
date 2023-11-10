@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import SearchBar from "../SearchBar/SearchBar";
 import { Link } from "react-router-dom";
-import vaperLogo from "../../assets/vaper-logo.svg";
+import vaperLogo from "../../assets/vaper-logo.png";
 
 const navMotion = {
   visible: {
@@ -38,10 +38,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className=" flex justify-evenly max-sm:justify-around p-1 items-center">
-      <figure>
-        <img src={vaperLogo} alt="" width={70} height={70} />
-      </figure>
+    <nav className=" flex justify-evenly max-sm:justify-around  items-center">
+      <Link to="#howdy">
+        <img src={vaperLogo} alt="logo vaper" width={100} height={100} />
+      </Link>
       <SearchBar />
       {!matches && (
         <ul className="flex gap-10">

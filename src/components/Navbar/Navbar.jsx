@@ -38,7 +38,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className=" flex justify-evenly max-sm:justify-around  items-center">
+    <nav className=" bg-[#ffde59] flex justify-evenly max-sm:justify-around  items-center">
       <Link to="#howdy">
         <img src={vaperLogo} alt="logo vaper" width={100} height={100} />
       </Link>

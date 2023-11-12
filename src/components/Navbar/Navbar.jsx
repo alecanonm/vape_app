@@ -38,7 +38,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className=" bg-[#ffde59] flex justify-evenly max-sm:justify-around  items-center">
+    <nav className=" bg-[#00cf02] flex justify-evenly max-sm:justify-around  items-center">
       <Link to="#howdy">
         <img src={vaperLogo} alt="logo vaper" width={100} height={100} />
       </Link>
@@ -79,7 +79,7 @@ const Navbar = () => {
         <motion.section
           animate={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
-          className=" fixed flex bg-[#ffffff] z-10 bottom-0 left-0 w-full h-screen items-center justify-center"
+          className=" fixed flex bg-[#059428] z-10 bottom-0 left-0 w-full h-screen items-center justify-center"
         >
           <motion.section
             variants={navMotion}

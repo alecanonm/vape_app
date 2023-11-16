@@ -1,6 +1,7 @@
 import logo from "../../assets/vaper-logo.png";
 import google from "../../assets/google.png";
 import { Link } from "react-router-dom";
+import loginWithGoogle from "../../firebase/loginWithGoogle";
 const Signin = () => {
   return (
     <>
@@ -50,7 +51,7 @@ const Signin = () => {
           <button className="pb-5">Registrarse</button>
           <div className=" flex items-center justify-center gap-3">
             <p className=" text-slate-400">Continuar con </p>
-            <div role="button">
+            <div role="button" onClick={loginWithGoogle}>
               <img src={google} alt="google" width={18} height={18} />
             </div>
           </div>

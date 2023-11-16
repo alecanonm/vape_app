@@ -4,10 +4,6 @@ import google from "../../assets/google.png";
 import loginWithGoogle from "../../firebase/loginWithGoogle";
 
 const Login = () => {
-  const handleLoginWithGoogle = () => {
-    loginWithGoogle();
-  };
-
   return (
     <>
       <form action="" className="  flex flex-col  items-center">
@@ -51,7 +47,7 @@ const Login = () => {
         <hr className="" />
         <p className=" text-slate-500">
           Aun no tienes una cuenta?{" "}
-          <Link to={"/"} className=" text-[#059428] font-medium">
+          <Link to={"/register"} className=" text-[#059428] font-medium">
             Registrarse
           </Link>
         </p>

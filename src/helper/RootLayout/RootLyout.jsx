@@ -4,16 +4,19 @@ import shoppingCart from "../../assets/shopping-cart.png";
 import { useLocation } from "react-router-dom";
 const RootLayout = () => {
   const { pathname } = useLocation();
+
+  const showComponent = pathname !== "/login" && pathname !== "/register";
+
   return (
     <>
-      {pathname !== "/login" && pathname !== "/register" && (
+      {showComponent && (
         <header>
           <Navbar />
         </header>
       )}
       <main className=" flex-1   place-content-center grid">
         <Outlet />
-        {pathname !== "/login" && pathname !== "/register" && (
+        {showComponent && (
           <div
             role="button"
             className="fixed  bg-[#619c89] right-5 bottom-6  rounded-full "

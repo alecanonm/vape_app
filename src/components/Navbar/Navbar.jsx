@@ -99,15 +99,14 @@ const Navbar = () => {
             <motion.a variants={itemMotion} href="/project">
               Novedades
             </motion.a>
-            <motion.a
+            <motion.span
               onClick={() => {
                 setToggled((prev) => !prev);
               }}
               variants={itemMotion}
-              href="/"
             >
-              Iniciar sesion
-            </motion.a>
+              <Link to={"login"}> Iniciar sesion</Link>
+            </motion.span>
             <motion.a
               onClick={() => {
                 setToggled((prev) => !prev);

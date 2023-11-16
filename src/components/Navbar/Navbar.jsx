@@ -46,7 +46,7 @@ const Navbar = () => {
       {!matches && (
         <ul className="flex gap-10">
           <Link to={"login"}>Iniciar sesion</Link>
-          <Link to={"/"}>Registarse</Link>
+          <Link to={"register"}>Registarse</Link>
           <Link to={"/"}>Novedades</Link>
           <Link to={"/"}>Marcas</Link>
           <Link>Sobre Nosotros</Link>
@@ -107,15 +107,14 @@ const Navbar = () => {
             >
               <Link to={"login"}> Iniciar sesion</Link>
             </motion.span>
-            <motion.a
+            <motion.span
               onClick={() => {
                 setToggled((prev) => !prev);
               }}
               variants={itemMotion}
-              href="/"
             >
-              Registarse
-            </motion.a>
+              <Link to={"register"}>Registarse</Link>
+            </motion.span>
             <motion.a
               variants={itemMotion}
               onClick={() => {

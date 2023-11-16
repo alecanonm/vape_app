@@ -47,7 +47,7 @@ const Signin = () => {
           />
         </label>
         <div className="p-4 text-center ">
-          <button className="pb-2">Registrarse</button>
+          <button className="pb-5">Registrarse</button>
           <div className=" flex items-center justify-center gap-3">
             <p className=" text-slate-400">Continuar con </p>
             <div role="button">

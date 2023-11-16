@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/vaper-logo.png";
 import google from "../../assets/google.png";
+import loginWithGoogle from "../../firebase/loginWithGoogle";
+
 const Login = () => {
+  const handleLoginWithGoogle = () => {
+    loginWithGoogle();
+  };
+
   return (
     <>
       <form action="" className="  flex flex-col  items-center">
@@ -34,9 +40,9 @@ const Login = () => {
           />
         </label>
         <div className="flex items-center justify-center gap-4 p-3 pb-6">
-          <button className="">Login</button>
+          <button>Login</button>
           <span className=" text-slate-500">or</span>
-          <div role="button" className="">
+          <div role="button" onClick={loginWithGoogle}>
             <img src={google} alt="google" width={20} height={20} />
           </div>
         </div>

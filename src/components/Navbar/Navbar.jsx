@@ -45,7 +45,7 @@ const Navbar = () => {
       <SearchBar />
       {!matches && (
         <ul className="flex gap-10">
-          <Link to={"/"}>Iniciar sesion</Link>
+          <Link to={"login"}>Iniciar sesion</Link>
           <Link to={"/"}>Registarse</Link>
           <Link to={"/"}>Novedades</Link>
           <Link to={"/"}>Marcas</Link>

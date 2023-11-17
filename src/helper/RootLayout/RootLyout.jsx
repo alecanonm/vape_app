@@ -14,12 +14,12 @@ const RootLayout = () => {
           <Navbar />
         </header>
       )}
-      <main className=" flex-1   place-content-center grid">
+      <main className=" flex-1 ">
         <Outlet />
         {showComponent && (
           <div
             role="button"
-            className="fixed  bg-[#619c89] right-5 bottom-6  rounded-full "
+            className="fixed  bg-[#181818] right-5 bottom-6  rounded-full "
           >
             <img
               src={shoppingCart}

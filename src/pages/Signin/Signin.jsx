@@ -25,17 +25,6 @@ const Signin = () => {
             className=" p-1.5 w-72 max-sm:w-80 rounded-md border-2 border-black "
           />
         </label>
-        <label htmlFor="" className=" flex flex-col pb-6">
-          <span className="absolute -translate-y-3 bg-white translate-x-4">
-            Username
-          </span>
-          <input
-            type="email"
-            name=""
-            id=""
-            className=" p-1.5 w-72 max-sm:w-80 rounded-md border-2 border-black "
-          />
-        </label>
         <label htmlFor="" className=" flex flex-col">
           <span className=" absolute  translate-x-4 -translate-y-3 bg-white">
             Password

@@ -16,7 +16,7 @@ const Home = () => {
         img={lostMary}
         width={450}
         height={450}
-        bgColor={" bg-[#d12b59]"}
+        bgColor={" bg-[#CE5A67]"}
       />
     </div>
   );

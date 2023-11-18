@@ -14,8 +14,8 @@ const Home = () => {
       <FrontPage
         title={"Lost Mary Bm 600"}
         img={lostMary}
-        width={450}
-        height={450}
+        width={600}
+        height={600}
         bgColor={" bg-[#CE5A67]"}
       />
     </div>

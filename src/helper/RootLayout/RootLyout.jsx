@@ -10,7 +10,7 @@ const RootLayout = () => {
   return (
     <>
       {showComponent && (
-        <header className=" sticky top-0 z-10 ">
+        <header className=" fixed w-full z-10 ">
           <Navbar />
         </header>
       )}

@@ -19,7 +19,7 @@ const RootLayout = () => {
         {showComponent && (
           <div
             role="button"
-            className="fixed  bg-[#181818] right-5 bottom-6  rounded-full "
+            className="fixed  bg-[#6a9855]  right-5 bottom-6  rounded-full "
           >
             <img
               src={shoppingCart}

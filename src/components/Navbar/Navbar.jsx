@@ -5,21 +5,21 @@ import { Link } from "react-router-dom";
 import vaperLogo from "../../assets/vaper-logo.png";
 
 const navMotion = {
-  // visible: {
-  //   opacity: 10,
-  //   transition: {
-  //     when: "beforeChildren",
-  //     staggerChildren: 0.15,
-  //   },
-  // },
-  // hidden: {
-  //   opacity: 0,
-  // },
+  visible: {
+    opacity: 10,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.15,
+    },
+  },
+  hidden: {
+    opacity: 0,
+  },
 };
 
 const itemMotion = {
-  // visible: { opacity: 1, x: 0 },
-  // hidden: { opacity: 0, x: -100 },
+  visible: { opacity: 1, x: 0 },
+  hidden: { opacity: 0, x: -100 },
 };
 
 const Navbar = () => {
@@ -38,7 +38,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="  text-[#ffffffa2] font-medium   flex justify-evenly max-sm:justify-around  items-center">
+    <nav className=" bg-[#ffffff] flex justify-evenly max-sm:justify-around  items-center">
       <Link to="#howdy">
         <img src={vaperLogo} alt="logo vaper" width={100} height={100} />
       </Link>
@@ -59,11 +59,11 @@ const Navbar = () => {
         >
           <motion.span
             animate={{ rotateZ: toggled ? 45 : 0, y: toggled ? 8 : 0 }}
-            className=" block h-1 w-8 rounded bg-[#ffffffa2] backdrop-blur-sm"
+            className=" block h-1 w-8 rounded bg-black"
           ></motion.span>
           <motion.span
             animate={{ width: toggled ? 0 : 26 }}
-            className=" block h-1 w-6 rounded bg-[#ffffffa2] backdrop-blur-sm"
+            className=" block h-1 w-6 rounded bg-black"
           ></motion.span>
           <motion.span
             animate={{
@@ -71,12 +71,16 @@ const Navbar = () => {
               y: toggled ? -8 : 0,
               width: toggled ? 30 : 18,
             }}
-            className=" block h-1 w-4 rounded bg-[#ffffffa2] backdrop-blur-sm"
+            className=" block h-1 w-4 rounded bg-black"
           ></motion.span>
         </section>
       )}
       {toggled && matches && (
-        <motion.section className="text-[#ffffff] fixed flex bg-transparent backdrop-blur-xl  z-10 bottom-0 left-0 w-full h-screen items-center justify-center">
+        <motion.section
+          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 100 }}
+          className=" fixed flex bg-[#ffffff] z-10 bottom-0 left-0 w-full h-screen items-center justify-center"
+        >
           <motion.section
             variants={navMotion}
             animate="visible"

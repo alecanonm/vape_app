@@ -1,9 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import "./App.css";
 import Home from "./pages/Home/Home";
 import RootLayout from "./helper/RootLayout/RootLyout";
-import Login from "./pages/Login/Login";
-import Signin from "./pages/Signin/Signin";
+import { useQuery, gql } from "@apollo/client";
+import "./App.css";
 
 const router = createBrowserRouter([
   {
@@ -15,21 +14,25 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-      {
-        path: "/login",
-        element: <Login />,
-      },
-      {
-        path: "/register",
-        element: <Signin />,
-      },
     ],
   },
 ]);
 
+const GET_PRODUCTS = gql`
+  query brands {
+    brands {
+      id
+      name
+    }
+  }
+`;
+
 function App() {
+  const { loading, error, data } = useQuery(GET_PRODUCTS);
+
   return (
     <div className=" flex flex-col h-screen">
+      {console.log(data)}
       <RouterProvider router={router} />
     </div>
   );

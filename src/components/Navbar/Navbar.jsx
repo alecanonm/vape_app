@@ -42,11 +42,11 @@ const Navbar = () => {
       <Link to="#howdy">
         <img src={vaperLogo} alt="logo vaper" width={100} height={100} />
       </Link>
-      <SearchBar />
+      {/* <SearchBar /> */}
       {!matches && (
         <ul className="flex gap-10">
-          <Link to={"login"}>Iniciar sesion</Link>
-          <Link to={"register"}>Registarse</Link>
+          {/* <Link to={"login"}>Iniciar sesion</Link> */}
+          {/* <Link to={"register"}>Registarse</Link> */}
           <Link to={"/"}>Novedades</Link>
           <Link to={"/"}>Marcas</Link>
           <Link>Sobre Nosotros</Link>
@@ -99,22 +99,22 @@ const Navbar = () => {
             <motion.a variants={itemMotion} href="/project">
               Novedades
             </motion.a>
-            <motion.span
+            {/* <motion.span
               onClick={() => {
                 setToggled((prev) => !prev);
               }}
               variants={itemMotion}
             >
               <Link to={"login"}> Iniciar sesion</Link>
-            </motion.span>
-            <motion.span
+            </motion.span> */}
+            {/* <motion.span
               onClick={() => {
                 setToggled((prev) => !prev);
               }}
               variants={itemMotion}
             >
               <Link to={"register"}>Registarse</Link>
-            </motion.span>
+            </motion.span> */}
             <motion.a
               variants={itemMotion}
               onClick={() => {
